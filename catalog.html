@@ -55,7 +55,7 @@
         <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
             <label for="search" class="visually-hidden">Поиск по сайту</label>
             <input type="search" name="search" value="" id="search" placeholder="Поиск по сайту">
-            <input type="image" src="" alt="Поиск">
+            <input type="image" src="img/search.svg" alt="Поиск">
         </form>
 
     </header>
@@ -71,10 +71,11 @@
             <li>Моноподы для селфи</li>
         </ul>
         <section class="filters">
+            <h2>Фильтр:</h2>
             <form class="form-filters" action="https://echo.htmlacademy.ru" method="get">
                 <fieldset class="form-filters-fieldset">
                     <legend>Стоимость</legend>
-                    <input type="range" id="price" name="price" value="" min="0" max="5000" step="100">
+                    <input type="range" id="price" name="price" value="2500" min="0" max="5000" step="100">
                 </fieldset>
                 <fieldset class="form-filters-fieldset">
                     <legend>Цвет</legend>
@@ -95,6 +96,7 @@
                         <input type="radio" class="visually-hidden" name="bluetooth" value="yes" checked>
                         Есть
                     </label>
+                    <label>
                     <input type="radio" class="visually-hidden" name="bluetooth" value="no">
                     Нет
                     </label>
