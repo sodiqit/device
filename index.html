@@ -59,9 +59,9 @@
     </header>
 
     <main class="container">
-        <section>
+        <section class="popular">
             <h2 class="visually-hidden">Популярные товары</h2>
-            <div class="popular">
+            <div class="popular-item">
                 <img src="img/slider-1.png" alt="Селфи-палка" width="384" height="486">
                 <p class="product-title">Делай селфи, как Бен Стиллер!</p>
                 <p class="product-description">
@@ -84,7 +84,7 @@
                     </tbody>
                 </table>
             </div>
-            <div class="popular">
+            <div class="popular-item">
                 <img src="img/slider-2.png" width="345" height="485" alt="Умный браслет">
                 <p class="product-title">Худеем правильно</p>
                 <p class="product-description">
@@ -103,7 +103,7 @@
                     </tbody>
                 </table>
             </div>
-            <div class="popular">
+            <div class="popular-item">
                 <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
                 <p class="product-title">Порхает как бабочка,<br>
                     жалит как пчела!</p>
@@ -125,6 +125,17 @@
                     </tbody>
                 </table>
             </div>
+            <ul class="slides-switches">
+                <li class="slider-radio">
+                    <button class="slider-btn" type="button" name="button">Первый слайд</button>
+                </li>
+                <li class="slider-radio">
+                    <button class="slider-btn" type="button" name="button">Второй слайд</button>
+                </li>
+                <li class="slider-radio">
+                    <button class="slider-btn" type="button" name="button">Третий слайд</button>
+                </li>
+            </ul>
             <!-- точки перехода слайдера -->
         </section>
         <section class="products">
@@ -187,12 +198,14 @@
                 условия кредита. Выгодные для нашего банка, разумеется.
             </p>
         </section>
-        <section class="logotypes">
+        <section class="brands">
             <h2 class="visually-hidden">Логотипы компаний гаджетов</h2>
-            <img class="logotype" src="img/logo-1.jpg" width="260" height="100" alt="">
-            <img class="logotype" src="img/logo-2.jpg" width="260" height="100" alt="">
-            <img class="logotype" src="img/logo-3.jpg" width="260" height="100" alt="">
-            <img class="logotype" src="img/logo-4.jpg" width="260" height="100" alt="">
+            <ul class="logotypes">
+                <li class="logotype"><img src="img/logo-1.jpg" width="260" height="100" alt=""></li>
+                <li class="logotype"><img src="img/logo-2.jpg" width="260" height="100" alt=""></li>
+                <li class="logotype"><img src="img/logo-3.jpg" width="260" height="100" alt=""></li>
+                <li class="logotype"><img src="img/logo-4.jpg" width="260" height="100" alt=""></li>
+            </ul>
         </section>
         <section class="about-us">
             <h2 class="about-us-title">О нас</h2>
