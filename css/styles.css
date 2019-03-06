@@ -133,6 +133,9 @@ ul {
     opacity: 0.3;
     border: none;
     background-color: inherit;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
 }
 
 .login,
@@ -702,6 +705,20 @@ ul {
 .main-header {
     width: 1160px;
     min-height: 297px;
+    position: relative;
+    margin-top: 40px;
+    padding-top: 1px;
+    z-index: 0;
+}
+
+.header-logo {
+    position: absolute;
+    top: -71px;
+    left: 60px;
+}
+
+.site-navigation {
+    margin-top: 40px;
 }
 
 .site-navigation-container,
@@ -793,6 +810,26 @@ ul {
     width: 1020px;
     margin: 0 60px;
     margin-bottom: 115px;
+    position: relative;
+    /* border:1px dashed green; */
+}
+
+.popular-item-number {
+    display: block;
+    font-size: 179.2px;
+    font-weight: bold;
+    color: #ffffff;
+    position: absolute;
+    right: 0;
+    top: 56px;
+}
+
+.popular .popular-item:first-of-type {
+    margin-left: 90px;
+    margin-right: 60px;
+    margin-top: -153px;
+    z-index: 1;
+    /* position: absolute; */
 }
 
 .popular-item-container {
@@ -802,11 +839,21 @@ ul {
 }
 
 .product-title {
-    margin-bottom: 38px;
+    margin-bottom: 35px;
+    margin-top: 71px;
+}
+
+.product-title::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 7px;
+    background-color: #fff;
+    top: 31px;
 }
 
 .product-description {
-    margin-bottom: 63px;
+    margin-bottom: 58px;
     margin-top: 0;
 }
 
@@ -815,8 +862,8 @@ ul {
 }
 
 .button-popular:hover {
-    margin-bottom: 35px;
-    margin-top: -15px;
+    margin-bottom: 40px;
+    margin-top: -20px;
 }
 
 .table-description td {
@@ -850,27 +897,54 @@ ul {
     margin-bottom: 80px;
 }
 
+.slides-switches {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    position: absolute;
+    right: 14px;
+    bottom: 118px;
+}
+
+.visually-hidden {
+    position: absolute;
+}
+
+.slider-btn {
+    border: none;
+    background-color: transparent;
+    font-size: 0;
+    padding: 0;
+}
+
+.slider-radio {
+    margin-right: 20px;
+}
+
 /* Services */
 .services {
     width: 100%;
+    padding-top: 1px;
 }
 
 .button-services {
     margin-bottom: 50px;
+    margin-top: -5px;
 }
 
 .button-services:hover,
 .button-services:active {
     margin-bottom: 35px;
-    margin-top: -17px;
+    margin-top: -20px;
 }
 
 .service-list-container {
-    display: flex;
-    align-items: center;
     margin-left: 400px;
     margin-bottom: 94px;
-    margin-top: -245px;
+    margin-top: -224px;
+    position: relative;
 }
 
 .service-list-subcontainer {
@@ -892,7 +966,13 @@ ul {
 }
 
 .service-list-title {
-    margin-bottom: 40px;
+    margin-bottom: 42px;
+}
+
+.service-list-container img {
+    position: absolute;
+    top: 49px;
+    right: 50px;
 }
 
 .info {
@@ -950,26 +1030,6 @@ ul {
 
 .button-us {
     margin-bottom: 85px;
-}
-
-.slides-switches {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    /* border: 2px solid red; */
-    align-items: center;
-    height: 50px;
-}
-
-.slider-btn {
-    border: none;
-    background-color: transparent;
-    font-size: 0;
-    padding: 0;
-}
-
-.slider-radio {
-    margin-right: 20px;
 }
 
 /* FOOTER */
@@ -1063,8 +1123,73 @@ ul {
     justify-content: center;
 }
 
-.main-footer .wrapper {
-    display: flex;
+/* Modal */
+.modal {
+    width: 960px;
+    border: 1px dashed transparent;
+    margin: 0 auto;
+    box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
 }
 
-.main-footer .container {}
+.modal h2 {
+    display: none;
+}
+
+.modal-login,
+.modal-map {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.modal-map {
+    height: 559px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 11px;
+    right: 11px;
+}
+
+.modal-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 100px;
+    margin-top: 97px;
+}
+
+.write-us {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.wrapper-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.write-us label {
+    margin-bottom: 12px;
+}
+
+.write-us-text {
+    margin-top: 35px;
+}
+
+.text-us {
+    margin-top: 35px;
+}
+
+#write-us-text {
+    margin-bottom: 52px;
+}
+
+.modal-login .button-container:hover {
+    margin-top: -10px;
+    margin-bottom: 64px;
+}
+
+.modal-login .button-container {
+    margin-bottom: 86px;
+}

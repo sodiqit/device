@@ -68,7 +68,6 @@
 
 
             </nav>
-
         </header>
 
     </div>
@@ -106,7 +105,22 @@
                             </tbody>
                         </table>
                     </div>
+                    <ul class="slides-switches">
+                        <li class="slider-radio">
 
+                            <button class="slider-btn" type="button" name="button"><img width="13" height="13" src="./img/slider-button.svg" alt="">Первый слайд</button>
+                        </li>
+                        <li class="slider-radio">
+
+                            <button class="slider-btn" type="button" name="button"><img width="13" height="13" src="./img/slider-button-empty.svg" alt="">Второй слайд</button>
+                        </li>
+                        <li class="slider-radio">
+
+                            <button class="slider-btn" type="button" name="button"> <img width="13" height="13" src="./img/slider-button-empty.svg" alt="">Третий слайд</button>
+                        </li>
+                    </ul>
+
+                    <span class="popular-item-number">01</span>
                 </div>
                 <div class="popular-item">
                     <img src="img/slider-2.png" width="345" height="485" alt="Умный браслет">
@@ -132,6 +146,7 @@
                             </tbody>
                         </table>
                     </div>
+                    <span class="popular-item-number">02</span>
                 </div>
                 <div class="popular-item">
                     <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
@@ -160,22 +175,9 @@
                             </tbody>
                         </table>
                     </div>
+                    <span class="popular-item-number">03</span>
                 </div>
-                <ul class="slides-switches">
-                    <li class="slider-radio">
 
-                        <button class="slider-btn" type="button" name="button"><img src="./img/slider-button-empty.svg" alt="">Первый слайд</button>
-                    </li>
-                    <li class="slider-radio">
-
-                        <button class="slider-btn" type="button" name="button"><img src="./img/slider-button-empty.svg" alt="">Второй слайд</button>
-                    </li>
-                    <li class="slider-radio">
-
-                        <button class="slider-btn" type="button" name="button"> <img src="./img/slider-button-empty.svg" alt="">Третий слайд</button>
-                    </li>
-                </ul>
-                <!-- точки перехода слайдера -->
             </section>
             <section class="products">
                 <h2 class="visually-hidden">Каталог товаров</h2>
@@ -424,18 +426,28 @@
 
     <section class="modal modal-login">
         <h2 class="visually-hidden">Личный кабинет</h2>
-        <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
-            <label for="write-us-name">Ваше имя:</label>
-            <input type="text" name="write-us-name" id="write-us-name" value="" placeholder="Имя Фамилия" required>
-            <label for="write-us-email">Ваш email:</label>
-            <input type="email" name="write-us-email" id="write-us-email" value="" placeholder="email@example.com" required>
-            <label for="write-us-text">Текст письма:</label>
-            <textarea id="write-us-text" name="write-us-text" rows="8" cols="80" placeholder="В свободной форме"></textarea>
-            <div class="button-container">
-                <button type="submit" name="button" class="button">Отправить</button>
-            </div>
+        <div class="modal-container">
+            <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
+                <div class="wrapper-name">
+                    <label for="write-us-name">Ваше имя:</label>
+                    <input type="text" name="write-us-name" id="write-us-name" value="" placeholder="Имя Фамилия" required>
+                </div>
 
-        </form>
+                <div class="wrapper-name">
+                    <label for="write-us-email">Ваш email:</label>
+                    <input type="email" name="write-us-email" id="write-us-email" value="" placeholder="email@example.com" required>
+                </div>
+
+
+                <label class="text-us" for="write-us-text">Текст письма:</label>
+                <textarea id="write-us-text" name="write-us-text" rows="8" cols="80" placeholder="В свободной форме"></textarea>
+                <div class="button-container">
+                    <button type="submit" name="button" class="button">Отправить</button>
+                </div>
+
+            </form>
+        </div>
+
         <button type="button" name="button" class="modal-close">
             <img src="img/modal-close.svg" alt="Закрыть">
             Закрыть
