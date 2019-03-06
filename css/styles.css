@@ -34,9 +34,10 @@ a {
 }
 
 ul {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
+
 /* main-header start */
 .main-header {
     background-color: #f7e296;
@@ -319,11 +320,14 @@ ul {
     line-height: 40px;
     font-weight: bold;
     color: #000000;
+    margin: 0;
+    padding: 0;
 }
 
 .service-list-description {
     font-family: "Open Sans", "Arial", sans-serif;
     color: #464646;
+    margin-bottom: 30px;
 }
 
 .button-us {
@@ -363,6 +367,7 @@ ul {
 
 .main-footer {
     background-color: #464646;
+    width: 100%;
 }
 
 .footer-logo {
@@ -448,7 +453,6 @@ ul {
 /* .write-us input {
     background-color: #f6dada;
 } */
-
 .write-us textarea {
     width: 760px;
     height: 156px;
@@ -680,6 +684,14 @@ ul {
 }
 
 /* СЕТКИ */
+.pixel {
+    position: absolute;
+    z-index: 1;
+    opacity: 0.3;
+    margin: 0 auto;
+    right: 240px;
+    top: 65px;
+}
 
 .container {
     width: 1180px;
@@ -706,6 +718,9 @@ ul {
 
 .search {
     margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* border:1px solid black; */
 }
 
@@ -724,7 +739,7 @@ ul {
 }
 
 .compare {
-    margin-right:45px;
+    margin-right: 45px;
 }
 
 .cart {
@@ -732,8 +747,27 @@ ul {
 }
 
 .login {
-    margin-right: 28px;
     /* border: 1px solid green; */
+}
+
+.login a {
+    display: block;
+}
+
+.login img {
+    margin-right: 13px;
+}
+
+.compare-cart a {
+    display: block;
+}
+
+.compare-cart img {
+    margin-right: 10px;
+}
+
+.search img {
+    margin-right: 15px;
 }
 
 .catalog {
@@ -741,7 +775,7 @@ ul {
 }
 
 .site-navigation-item:last-child {
-    margin-left:auto;
+    margin-left: auto;
     margin-right: -4px;
 }
 
@@ -753,6 +787,296 @@ ul {
     margin-left: 35px;
 }
 
-/* .slider-btn {
-    background: url(../img/slider-button-empty.svg) no-repeat;
-} */
+/* Popular-items */
+
+
+.popular-item {
+    display: flex;
+    width: 1020px;
+    margin: 0 60px;
+    margin-bottom: 115px;
+}
+
+.popular-item-container {
+    margin-left: 115px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-title {
+    margin-bottom: 38px;
+}
+
+.product-description {
+    margin-bottom: 63px;
+    margin-top: 0;
+}
+
+.popular-item-container .button-popular {
+    margin-bottom: 52px;
+}
+
+.button-popular:hover {
+    margin-bottom: 35px;
+    margin-top: -15px;
+}
+
+.table-description td {
+    padding-right: 77px;
+}
+
+.value td {
+    padding-bottom: 15px;
+}
+
+.popular-item:nth-of-type(2) {
+    margin-bottom: 95px;
+}
+
+.popular-item:nth-of-type(2) .popular-item-container {
+    margin-left: 170px;
+}
+
+.popular-item:last-of-type {
+    margin-left: 30px;
+    width: 1076px;
+}
+
+.popular-item:last-of-type .popular-item-container {
+    margin-left: 40px;
+}
+
+.products-catalog {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+
+/* Services */
+
+.services {
+    width: 100%;
+}
+
+.button-services {
+    margin-bottom: 50px;
+}
+
+.button-services:hover,
+.button-services:active {
+    margin-bottom: 35px;
+    margin-top: -17px;
+}
+
+.service-list-container {
+    display: flex;
+    align-items: center;
+    margin-left: 400px;
+    margin-bottom: 94px;
+    margin-top: -245px;
+}
+
+.service-list-subcontainer {
+    display: flex;
+    flex-direction: column;
+    margin-right: 130px;
+}
+
+.service-list-container:first-of-type .service-list-subcontainer {
+    margin-right: 130px;
+}
+
+.service-list-container:nth-of-type(2) .service-list-subcontainer {
+    margin-right: 100px;
+}
+
+.service-list-container:last-of-type .service-list-subcontainer {
+    margin-right: 110px;
+}
+
+.service-list-title {
+    margin-bottom: 40px;
+}
+
+.info {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.logotypes {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* About-us and contacts */
+
+
+.about-us-title {
+    margin-bottom: 40px;
+    margin-top: 145px;
+}
+
+.contacts .about-us-title {
+    margin-top: 143px;
+}
+
+.us {
+    margin-bottom: 30px;
+}
+
+.about-us-list li {
+    margin-bottom: 5px;
+}
+
+.about-us-list li:last-child {
+    margin-bottom: 92px;
+}
+
+.contacts .service-list-description {
+    margin-bottom: 0;
+}
+
+.contacts img {
+    margin-bottom: 85px;
+    margin-top: 27px;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.contacts {
+    margin-left: 135px;
+}
+
+.button-us:hover {
+    margin-top: -15px;
+}
+
+.button-us {
+    margin-bottom: 85px;
+}
+
+.slides-switches {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid red; */
+    align-items: center;
+    height: 50px;
+}
+
+.slider-btn {
+    border: none;
+    background-color: transparent;
+    font-size: 0;
+    padding: 0;
+}
+
+.slider-radio {
+    margin-right: 20px;
+}
+
+
+/* FOOTER */
+
+.main-footer{
+    padding-top: 1px;
+    height: 325px;
+}
+
+.footer-logo {
+    margin-top:60px;
+    margin-bottom:20px;
+}
+
+
+.footer-services,
+ .footer-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-service-item {
+    margin-right:30px;
+}
+
+.footer-service-item:last-child {
+    margin-right: 0;
+}
+
+.footer-services {
+    margin-top:144px;
+}
+
+.footer-social {
+    margin-top: 65px;
+}
+
+.social-button {
+    margin-right: 23px;
+}
+
+.footer-container {
+    display:flex;
+}
+
+.footer-compare-cart {
+    display: flex;
+    margin-left: 44px;
+}
+
+.footer-login img {
+    margin-right:10px;
+}
+
+.footer-compare-cart img {
+    margin-right:8px;
+}
+
+
+.footer-container {
+    margin-top: 64px;
+    margin-bottom: 47px;
+}
+
+.tel {
+ margin-top:0;
+ margin-bottom: 0;
+}
+
+.htmlacademy {
+    margin-top: 65px;
+}
+
+.layout-column-1 {
+    display: flex;
+    margin-left:0;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.layout-column-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: auto;
+}
+
+.layout-column-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 155px;
+    justify-content: center;
+}
+
+.main-footer .wrapper {
+display: flex;
+}
+
+.main-footer .container {
+
+}
