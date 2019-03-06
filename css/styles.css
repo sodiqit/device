@@ -788,8 +788,6 @@ ul {
 }
 
 /* Popular-items */
-
-
 .popular-item {
     display: flex;
     width: 1020px;
@@ -852,9 +850,7 @@ ul {
     margin-bottom: 80px;
 }
 
-
 /* Services */
-
 .services {
     width: 100%;
 }
@@ -910,8 +906,6 @@ ul {
 }
 
 /* About-us and contacts */
-
-
 .about-us-title {
     margin-bottom: 40px;
     margin-top: 145px;
@@ -978,29 +972,26 @@ ul {
     margin-right: 20px;
 }
 
-
 /* FOOTER */
-
-.main-footer{
+.main-footer {
     padding-top: 1px;
     height: 325px;
 }
 
 .footer-logo {
-    margin-top:60px;
-    margin-bottom:20px;
+    margin-top: 60px;
+    margin-bottom: 20px;
 }
 
-
 .footer-services,
- .footer-social{
+.footer-social {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .footer-service-item {
-    margin-right:30px;
+    margin-right: 37px;
 }
 
 .footer-service-item:last-child {
@@ -1008,7 +999,7 @@ ul {
 }
 
 .footer-services {
-    margin-top:144px;
+    margin-top: 144px;
 }
 
 .footer-social {
@@ -1020,7 +1011,7 @@ ul {
 }
 
 .footer-container {
-    display:flex;
+    display: flex;
 }
 
 .footer-compare-cart {
@@ -1029,13 +1020,12 @@ ul {
 }
 
 .footer-login img {
-    margin-right:10px;
+    margin-right: 10px;
 }
 
 .footer-compare-cart img {
-    margin-right:8px;
+    margin-right: 8px;
 }
-
 
 .footer-container {
     margin-top: 64px;
@@ -1043,8 +1033,8 @@ ul {
 }
 
 .tel {
- margin-top:0;
- margin-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .htmlacademy {
@@ -1053,7 +1043,7 @@ ul {
 
 .layout-column-1 {
     display: flex;
-    margin-left:0;
+    margin-left: 0;
     flex-direction: column;
     align-items: flex-start;
 }
@@ -1069,14 +1059,12 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 155px;
+    margin-left: 153px;
     justify-content: center;
 }
 
 .main-footer .wrapper {
-display: flex;
+    display: flex;
 }
 
-.main-footer .container {
-
-}
+.main-footer .container {}
