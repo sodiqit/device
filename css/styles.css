@@ -202,7 +202,8 @@ ul {
 }
 
 /* popular end */
-.products-catalog {
+.products-catalog,
+.products-list {
     list-style: none;
 }
 
@@ -432,8 +433,8 @@ ul {
 
 .write-us input {
     border: none;
-    width: 360px;
-    height: 50px;
+    width: 345px;
+    min-height: 50px;
     background-color: #f2f2f2;
     outline: none;
     font-family: "Open Sans", "Arial", sans-serif;
@@ -458,7 +459,7 @@ ul {
 } */
 .write-us textarea {
     width: 760px;
-    height: 156px;
+    height: 137px;
     background-color: #f2f2f2;
     border: none;
     font-family: "Open Sans", "Arial", sans-serif;
@@ -497,7 +498,14 @@ ul {
     font-weight: 300;
 }
 
-.breadcrumbs li,
+.catalog-title {
+    font-size: 47px;
+    line-height: 48px;
+    font-weight: bold;
+    color: #000000;
+    letter-spacing: 0.01em;
+}
+
 .sorting-of-type li,
 .sorting-quantity li {
     font-family: "Open Sans", "Arial", sans-serif;
@@ -508,18 +516,35 @@ ul {
     list-style: none;
 }
 
+.breadcrumbs li {
+    color:rgba(0, 0, 0, 0.3);
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    list-style: none;
+}
+
 .breadcrumbs a {
     color: inherit;
 }
 
-.breadcrumbs li:hover,
+
 .sorting-of-type li:hover,
 .sorting-quantity li:hover {
     opacity: 0.6;
 }
 
+.breadcrumbs li:hover {
+    color:rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs li:last-child:hover {
+    color:rgba(0, 0, 0, 0.3);
+}
+
 .breadcrumbs li:active {
-    opacity: 0.1;
+    color:rgba(0, 0, 0, 0.1);
 }
 
 .sorting-of-type li:active,
@@ -568,13 +593,13 @@ ul {
     background-color: #ebebeb;
 }
 
-.filters h2 {
+.filter-title {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.2em;
     color: #000000;
     font-weight: bold;
-    background-color: #dcdcdc;
+    text-transform: uppercase;
 }
 
 .filters legend {
@@ -611,6 +636,15 @@ ul {
     outline: none;
 }
 
+.sorting-container h2 {
+    font-size:16px;
+    line-height: 24px;
+    color:#000000;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    text-transform:uppercase;
+}
+
 .product-compare {
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 13px;
@@ -628,7 +662,7 @@ ul {
     opacity: 0.1;
 }
 
-.product-item h3 {
+.product-list-item h3 {
     font-size: 18px;
     color: #000000;
     font-weight: bold;
@@ -718,7 +752,7 @@ ul {
 }
 
 .site-navigation {
-    margin-top: 40px;
+    margin-top: 44px;
 }
 
 .site-navigation-container,
@@ -728,7 +762,7 @@ ul {
     margin: 0 60px;
     /* border:1px solid red; */
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     width: 1040px;
     justify-content: space-between;
 }
@@ -1177,12 +1211,19 @@ ul {
     margin-top: 35px;
 }
 
+#write-us-name,
+#write-us-email {
+    padding-left: 15px;
+}
+
 .text-us {
     margin-top: 35px;
 }
 
 #write-us-text {
     margin-bottom: 52px;
+    padding-top: 17px;
+    padding-left: 9px;
 }
 
 .modal-login .button-container:hover {
@@ -1192,4 +1233,104 @@ ul {
 
 .modal-login .button-container {
     margin-bottom: 86px;
+}
+
+/* Сетки 2 страница */
+.login-checked {
+    display: flex;
+}
+
+.user {
+    margin-right: 13px;
+}
+
+.user img {
+    margin-right: 10px;
+}
+
+.catalog-compare-cart {
+    margin-left: 68px;
+}
+
+.catalog-header {
+    min-height: 186px;
+}
+
+.catalog-main {
+    width: 1100px;
+    padding-left: 60px;
+}
+
+.catalog-title {
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.breadcrumbs {
+    display: flex;
+}
+
+.breadcrumbs li {
+    position: relative;
+    margin-right: 35px;
+}
+
+.breadcrumbs li::after {
+    content:'';
+    width: 4px;
+    height: 1px;
+    background-color: #000000;
+    position: absolute;
+    top: 11px;
+    right: -16px;
+    transform: rotate(45deg);
+}
+
+.breadcrumbs li::before {
+    content:'';
+    width: 4px;
+    height: 1px;
+    background-color: #000000;
+    position: absolute;
+    bottom: 10px;
+    right: -16px;
+    transform: rotate(-45deg);
+}
+
+.breadcrumbs li:last-child::before,
+.breadcrumbs li:last-child::after {
+    display: none;
+}
+
+.breadcrumbs {
+    margin-bottom: 45px;
+}
+
+.filter-title {
+    padding: 23px 0;
+}
+
+.title-color {
+    background-color: #dcdcdc;
+    width: 100%;
+}
+
+.form-filters fieldset {
+    padding: 0;
+    margin:0;
+}
+
+.form-filters button {
+    cursor: pointer;
+}
+
+.form-filters {
+    display: flex;
+    flex-direction: column;
+}
+
+.filters .form-filters-fieldset:first-child {
+    margin-top: 80px;
 }
