@@ -38,6 +38,14 @@ ul {
     padding: 0;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
 /* main-header start */
 .main-header {
     background-color: #f7e296;
@@ -517,7 +525,7 @@ ul {
 }
 
 .breadcrumbs li {
-    color:rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.3);
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 14px;
     line-height: 24px;
@@ -529,22 +537,21 @@ ul {
     color: inherit;
 }
 
-
 .sorting-of-type li:hover,
 .sorting-quantity li:hover {
     opacity: 0.6;
 }
 
 .breadcrumbs li:hover {
-    color:rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .breadcrumbs li:last-child:hover {
-    color:rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .breadcrumbs li:active {
-    color:rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.1);
 }
 
 .sorting-of-type li:active,
@@ -566,27 +573,27 @@ ul {
 .top::after {
     content: '';
     display: inline-block;
-    position: absolute;
+    /* position: absolute; */
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 0 5.5px 10px 5.5px;
     border-color: transparent transparent #000000 transparent;
-    top: 0;
-    right: -100px;
+    /* top: 0;
+    right: -100px; */
 }
 
 .bottom::after {
     content: '';
-    position: absolute;
     display: inline-block;
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 10px 5.5px 0 5.5px;
     border-color: #000000 transparent transparent transparent;
-    top: -28px;
-    right: 0px;
+    /* top: -28px;
+    right: 0px; */
+     /* position: absolute; */
 }
 
 .sorting-container {
@@ -637,12 +644,12 @@ ul {
 }
 
 .sorting-container h2 {
-    font-size:16px;
+    font-size: 16px;
     line-height: 24px;
-    color:#000000;
+    color: #000000;
     letter-spacing: 0.2em;
     font-weight: bold;
-    text-transform:uppercase;
+    text-transform: uppercase;
 }
 
 .product-compare {
@@ -1278,7 +1285,7 @@ ul {
 }
 
 .breadcrumbs li::after {
-    content:'';
+    content: '';
     width: 4px;
     height: 1px;
     background-color: #000000;
@@ -1289,7 +1296,7 @@ ul {
 }
 
 .breadcrumbs li::before {
-    content:'';
+    content: '';
     width: 4px;
     height: 1px;
     background-color: #000000;
@@ -1319,7 +1326,7 @@ ul {
 
 .form-filters fieldset {
     padding: 0;
-    margin:0;
+    margin: 0;
 }
 
 .form-filters button {
@@ -1332,5 +1339,102 @@ ul {
 }
 
 .filters .form-filters-fieldset:first-child {
-    margin-top: 80px;
+    margin-top: 72px;
 }
+
+.label-color {
+    display: block;
+}
+
+.check__box {
+    background-image: url(../img/checkbox-off.svg);
+    background-repeat: no-repeat;
+    width: 27px;
+    height: 23px;
+    position: absolute;
+    left: -35px;
+}
+
+.form-filters input[type="checkbox"]:checked + span {
+    background-image: url(../img/checkbox-on.svg);
+}
+
+.label-color {
+    margin-left:35px;
+    position: relative;
+}
+
+
+.label-color:last-child {
+    margin-bottom: 50px;
+}
+
+ .legend-color {
+     margin-bottom: 23px;
+ }
+
+.legend-price {
+    margin-bottom: 27px;
+}
+
+.label-bluetooth {
+    display: block;
+    position: relative;
+    margin-left: 35px;
+    margin-bottom: 10px;
+}
+
+.radio {
+    background-image: url(../img/radio-off.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: -35px;
+}
+
+.form-filters input[type="radio"]:checked + span {
+    background-image: url(../img/radio-on.svg);
+    background-repeat: no-repeat;
+}
+
+.legend-bluetooth {
+    margin-bottom:25px;
+}
+
+.form-filters .button-container {
+    margin-top: 48px;
+    margin-bottom:
+}
+
+.form-filters .button-container:hover {
+    margin-top:24px;
+}
+
+.sorting-container, .sorting-of-type,
+.sorting-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-list-item {
+    margin-right: 40px;
+}
+
+.product-list-item h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+
+
+/* .flex-container {
+    display: flex;
+} */
