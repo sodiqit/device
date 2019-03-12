@@ -75,7 +75,7 @@
 
     </div>
     <main>
-        <div class="container catalog-main">
+        <div class="catalog-main">
             <h1 class="catalog-title">Моноподы для селфи</h1>
             <ul class="breadcrumbs">
                 <li>
@@ -87,16 +87,15 @@
                 <li>Моноподы для селфи</li>
             </ul>
         </div>
+        
         <div class="flex-container">
             <section class="filters">
-                <div class="title-color">
-                    <div class="container catalog-main">
-                        <h2 class="filter-title">Фильтр:</h2>
+                <!-- <div class="catalog-main"> -->
+                    <div class="title-color">
+                        <!-- <div class="catalog-main"> -->
+                            <h2 class="filter-title">Фильтр:</h2>
+                        <!-- </div> -->
                     </div>
-                </div>
-
-                <div class="container catalog-main">
-
                     <form class="form-filters" action="https://echo.htmlacademy.ru" method="get">
                         <fieldset class="form-filters-fieldset">
                             <legend class="legend-price">Стоимость</legend>
@@ -149,7 +148,7 @@
                         </div>
 
                     </form>
-                </div>
+                <!-- </div> -->
 
             </section>
             <section class="products">
@@ -176,24 +175,31 @@
                                 <span class="product-price">500 руб.</span>
                             </h3>
                         </a>
-                        <div class="button-container">
-                            <a href="#" class="button">В корзину</a>
+
+                        <div class="product-list-item-hover">
+                            <div class="button-container">
+                                <a href="#" class="button">В корзину</a>
+                            </div>
+
+                            <a href="#" class="product-compare">Добавить к сравнению</a>
                         </div>
 
-                        <a href="#" class="product-compare">Добавить к сравнению</a>
                     </li>
                     <li class="product-list-item">
                         <a href="catalog-item.html">
                             <img src="img/catalog/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-                            <h3>
+                            <h3 class="product-list-item-h3">
                                 <p>Профессиональная <br> селфи-палка</p>
                                 <span class="product-price">1500 руб.</span>
                             </h3>
                         </a>
-                        <div class="button-container">
-                            <a href="#" class="button">В корзину</a>
+                        <div class="product-list-item-hover">
+                            <div class="button-container">
+                                <a href="#" class="button">В корзину</a>
+                            </div>
+
+                            <a href="#" class="product-compare">Добавить к сравнению</a>
                         </div>
-                        <a href="#" class="product-compare">Добавить к сравнению</a>
                     </li>
                     <li class="product-list-item">
                         <a href="catalog-item.html">
@@ -203,40 +209,48 @@
                                 <span class="product-price">2 500 руб.</span>
                             </h3>
                         </a>
-                        <div class="button-container">
-                            <a href="#" class="button">В корзину</a>
+                        <div class="product-list-item-hover">
+                            <div class="button-container">
+                                <a href="#" class="button">В корзину</a>
+                            </div>
+
+                            <a href="#" class="product-compare">Добавить к сравнению</a>
                         </div>
-                        <a href="#" class="product-compare">Добавить к сравнению</a>
                     </li>
                     <li class="product-list-item">
                         <a href="catalog-item.html">
                             <img src="img/catalog/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-                            <h3>
+                            <h3 class="product-list-item-h3">
                                 <p>Селфи-палка «Следуй за <br> мной»</p>
                                 <span class="product-price">4 900 руб.</span>
                             </h3>
                         </a>
                         <p class="mark">new</p>
-                        <div class="button-container">
-                            <a href="#" class="button">В корзину</a>
-                        </div>
+                        <div class="product-list-item-hover">
+                            <div class="button-container">
+                                <a href="#" class="button">В корзину</a>
+                            </div>
 
-                        <a href="#" class="product-compare">Добавить к сравнению</a>
+                            <a href="#" class="product-compare">Добавить к сравнению</a>
+                        </div>
                     </li>
                 </ul>
                 <ul class="pagination-list">
                     <li class="pagination-button">
                         <button type="button" name="button">Назад</button>
                     </li>
-                    <li class="pagination-item pagination-item-current">
-                        <a href="#">1</a>
-                    </li>
-                    <li class="pagination-item">
-                        <a href="#">2</a>
-                    </li>
-                    <li class="pagination-item">
-                        <a href="#">3</a>
-                    </li>
+                    <div class="pagination-item-container">
+                        <li class="pagination-item pagination-item-current">
+                            <a href="#">1</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="#">2</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="#">3</a>
+                        </li>
+                    </div>
+
                     <li class="pagination-button">
                         <button type="button" name="button-pagination">Вперед</button>
                     </li>
