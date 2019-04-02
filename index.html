@@ -23,7 +23,7 @@
                     <!-- поиск по сайту -->
                     <ul class="login">
                         <li class="entry">
-                            <a href="login.html">
+                            <a href="login.html" class="login-link">
                                 <img src="img/user.svg" alt="Войти">
                                 Войти</a>
                         </li>
@@ -47,12 +47,18 @@
                     <li class="site-navigation-item">
                         <a class="site-navigation-parent" href="catalog.html">Каталог товаров</a>
                         <ul class="catalog">
-                            <li class="catalog-item"><a href="catalog.html">Виртуальная реальность</a></li>
-                            <li class="catalog-item"><a href="catalog.html">Моноподы для селфи</a></li>
-                            <li class="catalog-item"><a href="catalog.html">Экшн-камеры</a></li>
-                            <li class="catalog-item"><a href="catalog.html">Фитнес-браслеты</a></li>
-                            <li class="catalog-item"><a href="catalog.html">Умные часы</a></li>
-                            <li class="catalog-item"><a href="catalog.html">Квадрокоптеры</a></li>
+                            <div class="catalog-col-1">
+                                <li class="catalog-item"><a href="catalog.html">Виртуальная реальность</a></li>
+                                <li class="catalog-item"><a href="catalog.html">Моноподы для селфи</a></li>
+                                <li class="catalog-item"><a href="catalog.html">Экшн-камеры</a></li>
+                            </div>
+                            <div class="catalog-col-2">
+                                <li class="catalog-item"><a href="catalog.html">Фитнес-браслеты</a></li>
+                                <li class="catalog-item"><a href="catalog.html">Умные часы</a></li>
+                            </div>
+                            <div class="catalog-col-3">
+                                <li class="catalog-item"><a href="catalog.html">Квадрокоптеры</a></li>
+                            </div>
                         </ul>
                     </li>
                     <li class="site-navigation-item">
@@ -76,7 +82,7 @@
         <div class="container">
             <section class="popular">
                 <h2 class="visually-hidden">Популярные товары</h2>
-                <div class="popular-item">
+                <!-- <div class="popular-item popular-item-1">
                     <img src="img/slider-1.png" alt="Селфи-палка" width="384" height="486">
                     <div class="popular-item-container">
                         <p class="product-title">Делай селфи,<br> как Бен Стиллер!</p>
@@ -121,11 +127,11 @@
                     </ul>
 
                     <span class="popular-item-number">01</span>
-                </div>
-                <div class="popular-item">
+                </div> -->
+                <!-- <div class="popular-item popular-item-2">
                     <img src="img/slider-2.png" width="345" height="485" alt="Умный браслет">
                     <div class="popular-item-container">
-                        <p class="product-title">Худеем правильно</p>
+                        <p class="product-title">Худеем<br> правильно!</p>
                         <p class="product-description">
                             Мотивирующие фитнес-браслеты помогут найти в себе силы <br>
                             не пропускать занятия и соблюдать диету.
@@ -146,9 +152,9 @@
                             </tbody>
                         </table>
                     </div>
-                    <span class="popular-item-number">02</span>
-                </div>
-                <div class="popular-item">
+                    <span class="popular-item-number number-2">02</span>
+                </div> -->
+                <div class="popular-item popular-item-3">
                     <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
                     <div class="popular-item-container">
                         <p class="product-title">Порхает как бабочка,<br>
@@ -175,7 +181,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <span class="popular-item-number">03</span>
+                    <span class="popular-item-number number-3">03</span>
                 </div>
 
             </section>
@@ -266,7 +272,7 @@
 
                     </li>
                     <li>
-                        <div class="button-container button-services">
+                        <div class="button-container button-services button-services-active">
                             <a href="#" class="button">
                                 Кредит
                             </a>
@@ -274,7 +280,7 @@
 
                     </li>
                 </ul>
-                <div class="service-list-container">
+                <!-- <div class="service-list-container">
                     <div class="service-list-subcontainer">
                         <h3 class="service-list-title">Доставка</h3>
                         <p class="service-list-description info">
@@ -282,7 +288,7 @@
                         </p>
                     </div>
                     <img src="img/delivery.svg" alt="Доставка">
-                </div>
+                </div> -->
 
                 <!-- <div class="service-list-container">
                         <div class="service-list-subcontainer">
@@ -292,8 +298,8 @@
                                 Товар, не дом, конечно же.
                             </p>
                         </div>
-                        <img src="img/warranty.svg" alt="Гарантия">
-                    </div>
+                        <img src="img/warranty.svg" alt="Гарантия" class="img_warranty">
+                    </div> -->
 
                     <div class="service-list-container">
                         <div class="service-list-subcontainer">
@@ -303,8 +309,8 @@
                                 условия кредита. Выгодные для нашего банка, разумеется.
                             </p>
                         </div>
-                        <img src="img/credit.svg" alt="Кредит">
-                    </div> -->
+                        <img src="img/credit.svg" alt="Кредит" class="img_credit">
+                    </div>
             </div>
 
         </section>
@@ -329,7 +335,7 @@
                     <li>ЖелДорЭкспедиция</li>
                 </ul>
                 <div class="button-container button-us">
-                    <a href="catalog.html" class="button">
+                    <a href="catalog.html" class="button map-button">
                         Подробнее о нас
                     </a>
                 </div>
@@ -337,7 +343,9 @@
             <section class="contacts">
                 <h2 class="about-us-title">Контакты</h2>
                 <p class="service-list-description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br> проверить работоспособность покупки. Всякое бывает.</p>
-                <p>
+
+                <p class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1590.3691329375115!2d37.528786819819345!3d55.68687366821263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1554218781279!5m2!1sru!2sru" width="560" height="222" frameborder="0" style="border:0" allowfullscreen class="map"></iframe>
                     <img src="img/map.jpg" alt="улица Строителей, 15">
                 </p>
                 <!-- Здесь будет карта -->
@@ -391,7 +399,7 @@
                     <ul class="footer-login">
                         <li class="entry">
 
-                            <a href="login.html">
+                            <a href="login.html" class="login-link">
                                 <img class="user-img" src="img/user.svg" alt="Войти">
                                 Войти</a>
                         </li>
@@ -430,12 +438,12 @@
             <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
                 <div class="wrapper-name">
                     <label for="write-us-name">Ваше имя:</label>
-                    <input type="text" name="write-us-name" id="write-us-name" value="" placeholder="Имя Фамилия" required>
+                    <input type="text" name="write-us-name" id="write-us-name" value="" placeholder="Имя Фамилия">
                 </div>
 
                 <div class="wrapper-name">
                     <label for="write-us-email">Ваш email:</label>
-                    <input type="email" name="write-us-email" id="write-us-email" value="" placeholder="email@example.com" required>
+                    <input type="email" name="write-us-email" id="write-us-email" value="" placeholder="email@example.com">
                 </div>
 
 
@@ -456,12 +464,18 @@
 
     <section class="modal modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1590.3691329375115!2d37.528786819819345!3d55.68687366821263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1554218781279!5m2!1sru!2sru" width="960" height="559" frameborder="0" style="border:0" allowfullscreen></iframe>
         <img src="img/map-big.jpg" width="960" height="559" alt="улица Строителей, 15">
         <button type="button" name="button" class="modal-close">
             <img src="img/modal-close.svg" alt="Закрыть">
             Закрыть
         </button>
     </section>
+
+
+
+    <script type="text/javascript" src="js/popup.js"></script>
+    <script type="text/javascript" src="js/map.js"></script>
 </body>
 
 </html>
