@@ -1,4 +1,4 @@
-var link = document.querySelector(".login-link");
+var link = document.querySelectorAll(".login-link");
 var popup = document.querySelector(".modal-login");
 var close = document.querySelector(".modal-close");
 var login = popup.querySelector("[name=write-us-name]");
@@ -26,7 +26,19 @@ window.addEventListener("keydown", function (evt) {
     }
 });
 
-link.addEventListener("click", function (evt) {
+link[0].addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.add("modal-show");
+    login.focus();
+    if (storage) {
+        login.value = storage;
+        email.focus();
+    } else {
+        login.focus();
+    }
+});
+
+link[1].addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.add("modal-show");
     login.focus();

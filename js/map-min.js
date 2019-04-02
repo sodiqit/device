@@ -1,0 +1,1 @@
+var mapButton=document.querySelector(".map-button"),map=document.querySelector(".modal-map"),mapClose=map.querySelector(".modal-close");mapButton.addEventListener("click",function(e){e.preventDefault(),map.classList.add("modal-show")}),mapClose.addEventListener("click",function(e){e.preventDefault(),map.classList.remove("modal-show")});

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Device - магазин современных товаров</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles-min.css">
 </head>
 
 <body>
@@ -82,7 +82,7 @@
         <div class="container">
             <section class="popular">
                 <h2 class="visually-hidden">Популярные товары</h2>
-                <!-- <div class="popular-item popular-item-1">
+                <div class="popular-item popular-item-1 hidden">
                     <img src="img/slider-1.png" alt="Селфи-палка" width="384" height="486">
                     <div class="popular-item-container">
                         <p class="product-title">Делай селфи,<br> как Бен Стиллер!</p>
@@ -111,7 +111,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <ul class="slides-switches">
+                    <!-- <ul class="slides-switches">
                         <li class="slider-radio">
 
                             <button class="slider-btn" type="button" name="button"><img width="13" height="13" src="./img/slider-button.svg" alt="">Первый слайд</button>
@@ -124,11 +124,11 @@
 
                             <button class="slider-btn" type="button" name="button"> <img width="13" height="13" src="./img/slider-button-empty.svg" alt="">Третий слайд</button>
                         </li>
-                    </ul>
+                    </ul> -->
 
                     <span class="popular-item-number">01</span>
-                </div> -->
-                <!-- <div class="popular-item popular-item-2">
+                </div>
+                <div class="popular-item popular-item-2 hidden">
                     <img src="img/slider-2.png" width="345" height="485" alt="Умный браслет">
                     <div class="popular-item-container">
                         <p class="product-title">Худеем<br> правильно!</p>
@@ -153,7 +153,7 @@
                         </table>
                     </div>
                     <span class="popular-item-number number-2">02</span>
-                </div> -->
+                </div>
                 <div class="popular-item popular-item-3">
                     <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
                     <div class="popular-item-container">
@@ -183,7 +183,20 @@
                     </div>
                     <span class="popular-item-number number-3">03</span>
                 </div>
+                <ul class="slides-switches">
+                    <li class="slider-radio">
 
+                        <button class="slider-btn" type="button" name="button"><!--><img width="13" height="13" src="./img/slider-button.svg" alt="" class="slider-btn-img"><-->Первый слайд</button>
+                    </li>
+                    <li class="slider-radio">
+
+                        <button class="slider-btn" type="button" name="button"><!--><img width="13" height="13" src="./img/slider-button-empty.svg" alt=""><-->Второй слайд</button>
+                    </li>
+                    <li class="slider-radio">
+
+                        <button class="slider-btn slider-btn-active" type="button" name="button"> <!--><img width="13" height="13" src="./img/slider-button-empty.svg" alt=""><-->Третий слайд</button>
+                    </li>
+                </ul>
             </section>
             <section class="products">
                 <h2 class="visually-hidden">Каталог товаров</h2>
@@ -192,7 +205,7 @@
 
                         <a class="product-link" href="catalog.html">
                             <div class="product-container">
-                                <img class="popular" src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
+                                <img class="popular-img" src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
                             </div>
                             Виртуальная <br> реальность
                         </a>
@@ -202,7 +215,7 @@
 
                         <a class="product-link" href="catalog.html">
                             <div class="product-container">
-                                <img class="popular popular2" src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
+                                <img class="popular-img popular2" src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
                             </div>
                             Моноподы <br> для селфи
                         </a>
@@ -212,7 +225,7 @@
 
                         <a class="product-link" href="catalog.html">
                             <div class="product-container">
-                                <img class="popular" src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры">
+                                <img class="popular-img" src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры">
                             </div>
                             Экшн-камеры
                         </a>
@@ -222,7 +235,7 @@
 
                         <a class="product-link" href="catalog.html">
                             <div class="product-container">
-                                <img class="popular" src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
+                                <img class="popular-img" src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
                             </div>
                             Фитнес-браслеты
                         </a>
@@ -232,7 +245,7 @@
 
                         <a class="product-link" href="catalog.html">
                             <div class="product-container">
-                                <img class="popular" src="img/popular-5.svg" width="56" height="98" alt="Умные часы">
+                                <img class="popular-img" src="img/popular-5.svg" width="56" height="98" alt="Умные часы">
                             </div>
                             Умные часы
                         </a>
@@ -242,7 +255,7 @@
 
                         <a class="product-link" href="catalog.html">
                             <div class="product-container">
-                                <img class="popular" src="img/poppular-6.svg" width="132" height="69" alt="Квадрокоптеры">
+                                <img class="popular-img" src="img/poppular-6.svg" width="132" height="69" alt="Квадрокоптеры">
                             </div>
                             Квадрокоптеры
                         </a>
@@ -280,7 +293,7 @@
 
                     </li>
                 </ul>
-                <!-- <div class="service-list-container">
+                <div class="service-list-container hidden">
                     <div class="service-list-subcontainer">
                         <h3 class="service-list-title">Доставка</h3>
                         <p class="service-list-description info">
@@ -288,9 +301,9 @@
                         </p>
                     </div>
                     <img src="img/delivery.svg" alt="Доставка">
-                </div> -->
+                </div>
 
-                <!-- <div class="service-list-container">
+                <div class="service-list-container hidden">
                         <div class="service-list-subcontainer">
                             <h3 class="service-list-title">Гарантия</h3>
                             <p class="service-list-description">
@@ -299,7 +312,7 @@
                             </p>
                         </div>
                         <img src="img/warranty.svg" alt="Гарантия" class="img_warranty">
-                    </div> -->
+                    </div>
 
                     <div class="service-list-container">
                         <div class="service-list-subcontainer">
@@ -474,8 +487,10 @@
 
 
 
-    <script type="text/javascript" src="js/popup.js"></script>
-    <script type="text/javascript" src="js/map.js"></script>
+    <script type="text/javascript" src="js/popup-min.js"></script>
+    <script type="text/javascript" src="js/map-min.js"></script>
+    <script type="text/javascript" src="js/main-min.js"></script>
+    <script type="text/javascript" src="js/slider-min.js"></script>
 </body>
 
 </html>
